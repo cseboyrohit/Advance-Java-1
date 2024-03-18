@@ -1,0 +1,62 @@
+
+import java.util.*;
+
+public class ArrayList {
+    public static
+    void main(String[] args) {
+        LinkedList<Integer> l1 = new LinkedList<>(); // <Any Data Types use>
+        LinkedList<Integer>l2=new LinkedList<>();// Creat A New ArrayList
+        LinkedList<Integer>l3=new LinkedList<>();
+        l1.add(1);
+        l1.add(2);
+        l1.add(3);
+        l1.add(4);
+        l1.add(5);
+        l1.add(6);
+        l2.add(20);
+        l2.add(40);
+        l2.add(80);
+        l2.add(90);
+        l2.add(2,60);
+        l1.add(0, 12);
+      //  l1.remove(1); // Remove the Element
+
+      //Inserts all of the elements in the specified collection into this list, starting at the specified position.
+      //  l1.addAll(l2);
+
+
+      //  System.out.println(l1.contains(6)); //true if the state is in the state set; otherwise false
+      //  System.out.println(l1.contains(41)); // Throw False
+
+//(Returns the index of the first occurrence of the specified element in this list,or -1 if this list does not contain the element. )
+      //  System.out.println("the first occurrence of in l1 is Index: "+l1.indexOf(2));
+
+
+      //  Returns the element at the specified position in this list.
+        System.out.println(l2.lastIndexOf("show the index position in this list."+80));
+
+      //   l1.clear(); //Removes all the states from the current state set.
+        //System.out.println(l1+""+l2);
+
+
+       // Returns the element at the specified position in this list.
+       // System.out.println("The index of ArrayList present in 1 position is :"+l2.get(1));
+
+
+        System.out.println(l1);
+        System.out.println(l2);
+        System.out.println("The Size of l1 is : "+l1.size()+"\n"+"The Size of l2  is : "+l2.size());// Array Size Output
+
+       // [System.out.println(l3.isEmpty()); //Returns true if this list contains no elements.]
+    }
+}
+
+
+//<-- IndexOutOfBoundsException Fix and Using -->
+//       try{
+//           l1.add(23,34);
+//       }catch (Exception e){
+//           System.out.println("Sorry not Arry Aviable");
+//           System.out.println(e);
+//           // e.printStackTrace();
+//       }
