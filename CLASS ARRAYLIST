@@ -1,7 +1,37 @@
 
+ //ArrayList use 
+
+import java.util.ArrayList;
+public class Arraylist1 {
+    public static void main(String[] args) {
+        ArrayList<Integer> num= new ArrayList<Integer>();
+        num.add(2);
+        num.add(4);
+        num.add(6);
+        num.add(8);
+        num.add(10);
+        num.add(12);
+        num.add(14);
+        num.add(16);
+        num.add(18);
+        num.add(20);
+//        for(int i:num){
+//            System.out.print(i+" ");
+//        }
+        System.out.println(num.get(3));
+        System.out.println("\nThe Size of Number is: "+num.size());
+
+    }
+}
+
+--------------------------------------------------------------------------------------------
+
+
+
+
 import java.util.*;
 
-public class ArrayList {
+public class LinkedList {
     public static
     void main(String[] args) {
         LinkedList<Integer> l1 = new LinkedList<>(); // <Any Data Types use>
