@@ -1,0 +1,115 @@
+/* TIME & DATE IN JAVA CODE FOR CHAPTER WISE 
+
+import java.util.Calendar;
+import java.sql.SQLOutput;
+import java.util.*;
+public class Date_And_Time extends Thread {
+    public static void main(String[] args) {
+           // Quick Quize
+        System.out.println(" The Vale Of long "+ Long.MAX_VALUE);
+//        System.out.println(Character.MAX_VALUE);
+//        System.out.println(Integer.MAX_VALUE);
+        System.out.println(System.currentTimeMillis());
+        System.out.println(System.currentTimeMillis()/1000/3600/24/365);
+
+//----------------------------------------------------------------------------------
+ //----- The Date Class In Java  ------  aaj kon sa din hai ap dekh sakte hai made by me;
+
+      import java.util.*;
+     public class Date_And_Time extends Thread {
+      public static void main(String[] args) {
+        Date d1= new Date();
+        System.out.println(d1.getDate());
+        System.out.println(d1.getDay());
+         int day= d1.getDay();
+         switch(day){
+             case 1:
+                 System.out.println("Monday");
+                 break;
+             case 2:
+                 System.out.println("Tuesday");
+                 break;
+             case 3:
+                 System.out.println("Wednesday");
+                 break;
+             case 4:
+                 System.out.println("Thursady");
+                 break;
+              case 5:
+                 System.out.println("Friday");
+                 break;
+             case 6:
+                 System.out.println("Saturday");
+                 break;
+             case 7:
+                 System.out.println("Sunday");
+          }
+       }
+//-----------------------------------------------------------------------------------------
+   // #_VID97 -----------> THE DATE CLASS IN JAVA CODE PRASTAIC <-------------
+      public class Date_And_Time extends Thread {
+    public static void main(String[] args) {
+      Date d1 = new Date();
+        System.out.println(d1); // Similar toString Show the Current data With Time,day  and date
+//        System.out.println(d1.getDate());
+//        System.out.println(d1.getHours());
+//        System.out.println(d1.getSeconds());
+//        System.out.println(d1.getMinutes());
+//        System.out.println(d1.toInstant());// 2024-03-23T05:24:22.232Z ALl Show - date,time,month
+       // d1.setHours(10); // You c an set the time
+       // System.out.println(d1.getHours());
+        System.out.println(d1.toString()); //Formats a date in the date escape format yyyy-mm-dd.
+
+        // Print railway Time
+   System.out.println(d1.getHours() + ":" + d1.getMinutes() + ":" + d1.getSeconds()+"\n"+"Date: "+d1.getDate());
+}
+}
+
+//  ------------------------------------------------------------------------------------------
+        // #_VID98 ---- Calendar Class in java ----(Calendar.getInstance())
+         public class Date_And_Time extends Thread {
+    public static void main(String[] args) {
+        Calendar c= Calendar.getInstance(); 
+        System.out.println(c.getCalendarType());
+        System.out.println(c.get(Calendar.YEAR));
+        System.out.println(c.get(Calendar.MONTH));
+        System.out.println(c.get(Calendar.DAY_OF_WEEK));
+        System.out.println(c.get(Calendar.WEEK_OF_MONTH));
+        System.out.println(c.get(Calendar.HOUR_OF_DAY));
+        c.add(Calendar.DATE,1000);//After 4 Year (Sun Mar 23 12:08:37 IST 2025)
+        System.out.println(c.getTime());
+
+
+
+        Calendar c1= Calendar.getInstance(TimeZone.getTimeZone("Australia/Sydney"));
+        System.out.println(c1.getTimeZone());
+        System.out.println(c1.getTimeZone().getID());
+
+// --------------------------------------------------------------------
+
+        //---> Calendar Class Method <---
+
+        Calendar a= Calendar.getInstance();
+        System.out.println( a.get(Calendar.SECOND));// provide only Second
+        System.out.println(a.get(Calendar.MINUTE));// PROVIDE MINUTE
+        System.out.println(a.getTimeZone().getID());// Show the Time zone
+        System.out.println(a.get(Calendar.DATE));// Current Date Show
+        System.out.println(a.get(Calendar.YEAR));// show the Current Year
+        System.out.println(a.get(Calendar.HOUR)+":"+a.get(Calendar.MINUTE)+":"+a.get(Calendar.SECOND));
+}
+}
+//---------------------------------------------------------------------------------------
+
+        //# _VID_99 ---> GregorianCalendar Class ---->
+       GregorianCalendar gcal= new GregorianCalendar();
+        System.out.println(gcal.isLeapYear(2024));// Leap Year hai Ya nhi
+        System.out.println(gcal.isLeapYear(2023));
+
+        // ----> Time Zone <----
+        System.out.println(TimeZone.getAvailableIDs()[0]);
+        System.out.println(TimeZone.getAvailableIDs()[1]);
+        System.out.println(TimeZone.getAvailableIDs()[2]);
+        System.out.println(TimeZone.getAvailableIDs()[3]);
+    }
+}
+
