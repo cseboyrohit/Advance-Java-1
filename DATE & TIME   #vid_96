@@ -113,3 +113,56 @@ public class Date_And_Time extends Thread {
     }
 }
 
+-----------------------------------------------------------------------------------------
+// Vid_ no 100 <--- java Time Package And Formate----------->
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.zone.ZoneRulesException;
+import java.time.*;
+
+public class vid_100 {
+    public static
+    void main(String[] args) {
+ /*       LocalDate Date= LocalDate.now();
+        System.out.println(Date.isLeapYear());
+        System.out.println(Date); //LocalDate -  a date without a time,
+
+        LocalTime time=LocalTime.now();
+        System.out.println(time); // LocalTime - a time without a date
+
+           Clock cl = Clock.systemDefaultZone();
+                System.out.println(cl.getZone());
+
+         LocalDateTime time_date= LocalDateTime.now();
+        System.out.println("Date And Time Both:- "+time_date); //LocalDateTime - combines date and time,
+
+        // Full form of UTC is Coordinated Universal Time or Universal Time Coordinated (UTC).
+        // a "full" date-time with time-zone and resolved offset from UTC/Greenwich
+        ZonedDateTime do1= ZonedDateTime.now();
+        System.out.println(do1); // All Show Date and Time +UTC Universal Time sa 5:30+ jada time
+
+
+        LocalDate tomorrow = LocalDate.now().plusDays(1);
+        System.out.println(tomorrow);
+
+        LocalTime sixThirty = LocalTime.parse("06:30");
+        System.out.println(sixThirty);
+
+        LocalTime sixThirty1 = LocalTime.of(6, 30);
+        System.out.println(sixThirty);
+
+    }
+}
+  */
+
+                LocalDateTime dt = LocalDateTime.now();
+                System.out.println("The current date is : " + dt);
+
+                DateTimeFormatter df = DateTimeFormatter.ofPattern("dd.MM.yyyy"); // This is the format
+
+                String myDate = dt.format(df); // Creating date string using date and format
+                System.out.println("Date after formattin : "+ myDate);
+
+            }
+        }
+
