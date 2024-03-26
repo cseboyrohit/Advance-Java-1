@@ -44,7 +44,11 @@ public class Date_And_Time extends Thread {
              case 7:
                  System.out.println("Sunday");
           }
+               LocalDate time= LocalDate.now();
+        System.out.println("Today Date: "+time);
+        System.out.println(d1.getHours()+":"+ d1.getMinutes()+":"+d1.getSeconds());
        }
+}
 //-----------------------------------------------------------------------------------------
    // #_VID97 -----------> THE DATE CLASS IN JAVA CODE PRASTAIC <-------------
       public class Date_And_Time extends Thread {
